@@ -3,42 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Tile to CNC Speeds and Feeds</title>
+    <title>Colorful Clickable Tiles with Links</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
         .tile-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            gap: 20px;
+            padding: 20px;
         }
         .tile {
-            background-color: #f2f2f2;
-            padding: 30px;
+            width: 150px;
+            height: 150px;
+            padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
         }
         .tile:hover {
             transform: scale(1.1);
         }
-        .tile a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
+
+        /* Each tile with a different background color */
+        .tile:nth-child(1) {
+            background-color: #f44336; /* Red */
         }
+        .tile:nth-child(2) {
+            background-color: #4caf50; /* Green */
+        }
+        .tile:nth-child(3) {
+            background-color: #2196f3; /* Blue */
+        }
+        .tile:nth-child(4) {
+            background-color: #ff9800; /* Orange */
+        }
+        /* Add more styles for additional tiles as needed */
     </style>
 </head>
 <body>
     <div class="tile-container">
-        <div class="tile">
-            <a href="https://desk-depot-shop.github.io/CNC/">CNC Speeds and Feeds</a>
-        </div>
+        <a class="tile" href="https://www.desk-depot-shop.github.io/cnc/" target="_blank">CNC Speeds and Feeds</a>
+        <a class="tile" href="https://www.example2.com" target="_blank">Example 2</a>
+        <a class="tile" href="https://www.example3.com" target="_blank">Example 3</a>
+        <a class="tile" href="https://www.example4.com" target="_blank">Example 4</a>
+        <!-- Add more tiles as needed -->
     </div>
 </body>
 </html>
-
