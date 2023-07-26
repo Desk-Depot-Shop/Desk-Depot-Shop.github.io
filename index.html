@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNC Speeds and Feeds Link</title>
+    <title>Clickable Tile to CNC Speeds and Feeds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .tile {
+            background-color: #f2f2f2;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .tile:hover {
+            transform: scale(1.1);
+        }
+        .tile a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to CNC Speeds and Feeds</h1>
-    <p>Click the link below to access the CNC Speeds and Feeds page:</p>
-    <a href="https://desk-depot-shop.github.io/CNC/">CNC Speeds and Feeds</a>
+    <div class="tile-container">
+        <div class="tile">
+            <a href="CNC Speeds and Feeds.html">CNC Speeds and Feeds</a>
+        </div>
+    </div>
 </body>
 </html>
+
